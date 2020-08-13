@@ -4,7 +4,7 @@ module.exports = {
     main: './src/main.tsx',
     render: './src/render.tsx'},
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './public'),
     filename: '[name].bundle.js',
     publicPath: 'https://localhost:8080/',
     library: 'MyLibrary',
@@ -60,7 +60,7 @@ module.exports = {
   },
   devServer: {
     https: true,
-    contentBase: path.resolve(__dirname, './dist'),
+    contentBase: path.resolve(__dirname, './public'),
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
