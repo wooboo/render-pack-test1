@@ -2,11 +2,12 @@ const path = require('path')
 module.exports = {
   entry: {
     main: './src/main.tsx',
-    render: './src/render.tsx'},
+    render: ['./src/publicPath.js','./src/render.tsx']
+  },
   output: {
     path: path.resolve(__dirname, './public'),
     filename: '[name].bundle.js',
-    publicPath: 'https://localhost:8080/',
+    // publicPath: 'https://localhost:8080/',
     library: 'MyLibrary',
     libraryTarget: 'umd',
     globalObject: 'window'
@@ -58,6 +59,11 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.ts', '.tsx', '.scss'],
   },
+  externals: {
+    // Use external version of React
+    "react": "React",
+    "react-dom": "ReactDOM"
+},
   devServer: {
     https: true,
     contentBase: path.resolve(__dirname, './public'),

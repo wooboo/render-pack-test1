@@ -1,3 +1,4 @@
+window.webpackPublicPath = 'https://localhost:8080/';
 var script = document.createElement('script');
 script.onload = function() {
     window.MyLibrary.default("xyz");

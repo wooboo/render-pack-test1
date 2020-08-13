@@ -8,6 +8,6 @@ export const App = () => (
       🚀
     </span>
     <div className={style.sassyDiv}>Get Sassy!</div>
-    <img src={image} alt="sample"/>
+    <img src={image} alt="samplexyz"/>
   </div>
 );
