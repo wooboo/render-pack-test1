@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
-export default function(id:string){
+export default async function(id:string){
+  const App = (await import(/* webpackChunkName: "App" */ './App')).App;
   ReactDOM.render(
     <App />,
     document.getElementById(id),

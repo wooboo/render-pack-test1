@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, './public'),
     filename: '[name].bundle.js',
     // publicPath: 'https://localhost:8080/',
-    library: 'MyLibrary',
+    library: ['SCB','B2C','HomePage'],
     libraryTarget: 'umd',
     globalObject: 'window'
   },

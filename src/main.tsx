@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
-ReactDOM.render(
-  <App />,
-  document.getElementById('app'),
-);
+async function run(){
+  const App = (await import(/* webpackChunkName: "App" */ './App')).App;
+  ReactDOM.render(
+    <App />,
+    document.getElementById('app'),
+  );
+}
+
+run();
+
