@@ -13,7 +13,10 @@
         "titleBar.activeBackground": "#3e32cf",
         "titleBar.activeForeground": "#e7e7e7",
         "titleBar.inactiveBackground": "#3e32cf99",
-        "titleBar.inactiveForeground": "#e7e7e799"
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBar.border": "#3e32cf",
+        "titleBar.border": "#3e32cf"
     },
-    "peacock.remoteColor": "#3e32cf"
+    "peacock.remoteColor": "#3e32cf",
+    "peacock.color": "#3e32cf"
 }
